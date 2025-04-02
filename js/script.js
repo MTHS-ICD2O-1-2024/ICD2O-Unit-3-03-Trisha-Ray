@@ -6,16 +6,14 @@
 
 "use strict"
 
-function calculateVolumeOfPyramid () {
+function calculateVolumeOfSphere () {
   // input
-  const length = parseFloat(document.getElementById('length').value);
-  const width = parseFloat(document.getElementById('width').value);
-  const height = parseFloat(document.getElementById('height').value);
+  const radius = parseFloat(document.getElementById('radius').value);
 
   // process
-  const volumeOfPyramid =  (length * width * height) / 3;
+  const volumeOfSphere = 4/3 * Math.PI * (radius * radius * radius);
 
   // output
-  document.getElementById('area').innerHTML = 'Volume is: ' + volumeOfPyramid + ' mm³'
+  document.getElementById('volume').innerHTML = 'Volume is: ' + volumeOfSphere + ' mm³'
 }
 
